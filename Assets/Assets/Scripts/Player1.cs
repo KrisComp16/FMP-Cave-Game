@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 //using Globals;
 
 public class Player1 : MonoBehaviour
@@ -12,9 +13,12 @@ public class Player1 : MonoBehaviour
     private Animator anim;
     //public GameObject fireball;
     //public Transform firepoint;
-    public static int playerscore;
     //public Text MyText;
     public ParticleSystem ps;
+    private int score;
+    public int playerscore;
+    public int highscore;
+
 
 
     // Start is called before the first frame update
@@ -26,6 +30,7 @@ public class Player1 : MonoBehaviour
         //MyText.text = "";
         ps = GetComponent<ParticleSystem>();
         ps.Pause();
+
     }
 
     // Update is called once per frame
@@ -236,12 +241,12 @@ public class Player1 : MonoBehaviour
 
         Vector2 velocity = rb.velocity;
 
-        if (other.gameObject.tag == "Coin")
+        if (other.gameObject.tag == "Gem")
         {
             playerscore = playerscore + 100;
             print(playerscore);
         }
-        if (other.gameObject.tag == "Spear")
+        if (other.gameObject.tag == "Lava")
         {
             print("I've fallen into lava!");
             velocity.y = 8f;
@@ -281,6 +286,47 @@ public class Player1 : MonoBehaviour
         Destroy(gameObject);
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         playerscore = 0;
+    }
+
+    void OnGUI()
+    {
+        highscore = PlayerPrefs.GetInt("highscore", 0);
+
+        GUILayout.Label($"<color='white'><size=20>Score = {playerscore}\nHighscore = {highscore}</size></color>\n");
+    }
+
+    void Highscore()
+    {
+
+
+        if (playerscore > highscore)
+        {
+            highscore = playerscore;
+
+            SetHighscore("highscore", highscore);
+        }
+        else
+        {
+            return;
+        }
+
+    }
+
+    void Score()
+    {
+        if (Input.GetKey("="))
+        {
+            playerscore += 1;
+        }
+        if (Input.GetKey("-"))
+        {
+            playerscore -= 1;
+        }
+    }
+
+    void SetHighscore(string name, int Value)
+    {
+        PlayerPrefs.SetInt(name, Value);
     }
 }
 

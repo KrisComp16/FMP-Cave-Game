@@ -1,0 +1,1884 @@
+fileFormatVersion: 2
+guid: 415ab8816edf40843bbd69a8b4af42a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -610659671159122274
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_0
+  - first:
+      213: -6433969771414052055
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_1
+  - first:
+      213: -7230073936845968518
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_2
+  - first:
+      213: 3614421687060397022
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_3
+  - first:
+      213: -1020292301442823034
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_4
+  - first:
+      213: -84630622650215267
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_5
+  - first:
+      213: 6725023748402494138
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_6
+  - first:
+      213: 1377534200199920427
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_7
+  - first:
+      213: -9124600741941046310
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_8
+  - first:
+      213: 3106570896268127051
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_9
+  - first:
+      213: 295696634865692452
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_10
+  - first:
+      213: -1032052812489931867
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_11
+  - first:
+      213: -3341417957513489356
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_12
+  - first:
+      213: -1389023178469509976
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_13
+  - first:
+      213: 8617627127313139686
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_14
+  - first:
+      213: 3385058503911313642
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_15
+  - first:
+      213: 6695234812713133357
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_16
+  - first:
+      213: -110571899772467778
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_17
+  - first:
+      213: -5679438920187225574
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_18
+  - first:
+      213: -1026139126553786129
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_19
+  - first:
+      213: -3701868402817483847
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_20
+  - first:
+      213: 6673520764130740287
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_21
+  - first:
+      213: -1852147356982294090
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_22
+  - first:
+      213: -2578242494806472491
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_23
+  - first:
+      213: -8191195946236171570
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_24
+  - first:
+      213: 972198707269387851
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_25
+  - first:
+      213: 4123000212776692860
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_26
+  - first:
+      213: -2995362800413974919
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_27
+  - first:
+      213: -7215070122564087216
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_28
+  - first:
+      213: -2794567864553378856
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_29
+  - first:
+      213: -3140136429219583781
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_30
+  - first:
+      213: 2450713742885095275
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_31
+  - first:
+      213: 4102094162325163022
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_32
+  - first:
+      213: 5449128179712560643
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_33
+  - first:
+      213: -3122201786755177488
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_34
+  - first:
+      213: 5770756193002307509
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_35
+  - first:
+      213: 5872810770554430905
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_36
+  - first:
+      213: 41754768278310341
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_37
+  - first:
+      213: 6688008126215099853
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_38
+  - first:
+      213: -8478024911196797358
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_39
+  - first:
+      213: 8777802795743137631
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_40
+  - first:
+      213: 7624913713923229593
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_41
+  - first:
+      213: -2836573786733736973
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_42
+  - first:
+      213: 8004756757301535812
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_43
+  - first:
+      213: -4111506532717495548
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_44
+  - first:
+      213: 7626407295442461461
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_45
+  - first:
+      213: -2431997043984043231
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_46
+  - first:
+      213: 9009762765373519360
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_47
+  - first:
+      213: -3566806203341406359
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_48
+  - first:
+      213: 3552741045662489309
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_49
+  - first:
+      213: 6614287788146530086
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_50
+  - first:
+      213: -5971291623488059536
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_51
+  - first:
+      213: -1549353331162729496
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_52
+  - first:
+      213: 8179570602606770911
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_53
+  - first:
+      213: 1324565036466705345
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_54
+  - first:
+      213: 6074218890758917173
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_55
+  - first:
+      213: -5135055863920510981
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_56
+  - first:
+      213: 2803198918915423944
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_57
+  - first:
+      213: -7102438857054297497
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_58
+  - first:
+      213: -5030580925098528481
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_59
+  - first:
+      213: 5839215155766012364
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_60
+  - first:
+      213: -2009261216339198720
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_61
+  - first:
+      213: -6299229462007841205
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_62
+  - first:
+      213: 2123473938278498629
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_63
+  - first:
+      213: -4282415040438289044
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_64
+  - first:
+      213: -5398709140624053366
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_65
+  - first:
+      213: 5768728103042212039
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_66
+  - first:
+      213: 6115155680593271075
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_67
+  - first:
+      213: -6228882435367906136
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_68
+  - first:
+      213: 8703953407868084646
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_69
+  - first:
+      213: -7830405168210641596
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_70
+  - first:
+      213: -7768469055260784033
+    second: Gem Sprite Sheet (by Alex13Art on DeviantArt)_71
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9657e5b3408687f0800000000000000
+      internalID: -610659671159122274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923a34fd492f5b6a0800000000000000
+      internalID: -6433969771414052055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b6c7e9f0e99ab90800000000000000
+      internalID: -7230073936845968518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbf3b5df51092230800000000000000
+      internalID: 3614421687060397022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c4f6dbe8137d1f0800000000000000
+      internalID: -1020292301442823034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9450d7a5e453def0800000000000000
+      internalID: -84630622650215267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abab89de775145d50800000000000000
+      internalID: 6725023748402494138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b3edc7e0cfd1310800000000000000
+      internalID: 1377534200199920427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 224
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3965b28f7ee5180800000000000000
+      internalID: -9124600741941046310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 224
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4be0a555c1cc1b20800000000000000
+      internalID: 3106570896268127051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 225
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fa272d5868a1400800000000000000
+      internalID: 295696634865692452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 225
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a348126f696da1f0800000000000000
+      internalID: -1032052812489931867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_12
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 225
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4341c4c3216e0a1d0800000000000000
+      internalID: -3341417957513489356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 225
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a47a8e47c239bce0800000000000000
+      internalID: -1389023178469509976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 225
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e70542d636f79770800000000000000
+      internalID: 8617627127313139686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_15
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 224
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae09c8546c42afe20800000000000000
+      internalID: 3385058503911313642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25689bd6904aec50800000000000000
+      internalID: 6695234812713133357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb50ce7617b277ef0800000000000000
+      internalID: -110571899772467778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a56be94649e21b0800000000000000
+      internalID: -5679438920187225574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8c1afa6eb62c1f0800000000000000
+      internalID: -1026139126553786129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_20
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb32dc0d4250acc0800000000000000
+      internalID: -3701868402817483847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38c433f6cb1d9c50800000000000000
+      internalID: 6673520764130740287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_22
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9446bbac9db46e0800000000000000
+      internalID: -1852147356982294090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d84e307c1e383cd0800000000000000
+      internalID: -2578242494806472491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 167
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca29fa8fa6035e80800000000000000
+      internalID: -8191195946236171570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 167
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46c2e5c291fd7d00800000000000000
+      internalID: 972198707269387851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 168
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c2a6359d6d73930800000000000000
+      internalID: 4123000212776692860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_27
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 168
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ed7e337655e66d0800000000000000
+      internalID: -2995362800413974919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_28
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 168
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052980b53fbeedb90800000000000000
+      internalID: -7215070122564087216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 168
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbe29c5553b739d0800000000000000
+      internalID: -2794567864553378856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_30
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 168
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd86a160e8efb64d0800000000000000
+      internalID: -3140136429219583781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_31
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 167
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6785da2a2fa20220800000000000000
+      internalID: 2450713742885095275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c489428e09de830800000000000000
+      internalID: 4102094162325163022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e865f65313f9b40800000000000000
+      internalID: 5449128179712560643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_34
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f32e5f5406bba4d0800000000000000
+      internalID: -3122201786755177488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_35
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfb949ce28d51050800000000000000
+      internalID: 5770756193002307509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_36
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b52cf3c74a608150800000000000000
+      internalID: 5872810770554430905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_37
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd48e29db7549000800000000000000
+      internalID: 41754768278310341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_38
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc51af9c4f390dc50800000000000000
+      internalID: 6688008126215099853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_39
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256c3330341085a80800000000000000
+      internalID: -8478024911196797358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_40
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 110
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f43bcc22501d970800000000000000
+      internalID: 8777802795743137631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 110
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9970661df9221d960800000000000000
+      internalID: 7624913713923229593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_42
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 111
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb0d867b2772a8d0800000000000000
+      internalID: -2836573786733736973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_43
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 111
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444ad581cdb961f60800000000000000
+      internalID: 8004756757301535812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_44
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 111
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bfca9979ef0f6c0800000000000000
+      internalID: -4111506532717495548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 111
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513ab4d570176d960800000000000000
+      internalID: 7626407295442461461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_46
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 111
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123f782e29fcf3ed0800000000000000
+      internalID: -2431997043984043231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_47
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 110
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00631a4df7b190d70800000000000000
+      internalID: 9009762765373519360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_48
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ffc23e7a8208ec0800000000000000
+      internalID: -3566806203341406359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_49
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda99a5682fdd4130800000000000000
+      internalID: 3552741045662489309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_50
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6279da603bbaacb50800000000000000
+      internalID: 6614287788146530086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_51
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0778abbd7e5b12da0800000000000000
+      internalID: -5971291623488059536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_52
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e33a78aa579f7ae0800000000000000
+      internalID: -1549353331162729496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_53
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaba97302ca38170800000000000000
+      internalID: 8179570602606770911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_54
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3108002ecc16210800000000000000
+      internalID: 1324565036466705345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_55
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c07a706e5fb4450800000000000000
+      internalID: 6074218890758917173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_56
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 53
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf73b3106ed9cb8b0800000000000000
+      internalID: -5135055863920510981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_57
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 53
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce76b49096f6e620800000000000000
+      internalID: 2803198918915423944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_58
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 54
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762e8566d711f6d90800000000000000
+      internalID: -7102438857054297497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_59
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 54
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1175a14d49cf2ab0800000000000000
+      internalID: -5030580925098528481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_60
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 54
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9a2862f3f090150800000000000000
+      internalID: 5839215155766012364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 54
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00df12bb19bad14e0800000000000000
+      internalID: -2009261216339198720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_62
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 54
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ef856dd24a498a0800000000000000
+      internalID: -6299229462007841205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_63
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 53
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541c3e4db48187d10800000000000000
+      internalID: 2123473938278498629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_64
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6db2edb53ec194c0800000000000000
+      internalID: -4282415040438289044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_65
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8be273e3aee315b0800000000000000
+      internalID: -5398709140624053366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_66
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0e4ab45a3ae0050800000000000000
+      internalID: 5768728103042212039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_67
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32959f721b56dd450800000000000000
+      internalID: 6115155680593271075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_68
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4d9345d609e89a0800000000000000
+      internalID: -6228882435367906136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_69
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a127894287aac870800000000000000
+      internalID: 8703953407868084646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_70
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dfb6d9cffc45390800000000000000
+      internalID: -7830405168210641596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem Sprite Sheet (by Alex13Art on DeviantArt)_71
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a0198ad8ad03490800000000000000
+      internalID: -7768469055260784033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
