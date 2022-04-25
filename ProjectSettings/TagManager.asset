@@ -8,6 +8,7 @@ TagManager:
   - Spear
   - Lava
   - Gem
+  - Coal
   layers:
   - Default
   - TransparentFX

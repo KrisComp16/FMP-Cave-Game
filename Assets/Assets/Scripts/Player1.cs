@@ -11,13 +11,15 @@ public class Player1 : MonoBehaviour
     private Rigidbody2D rb;
     bool isGrounded;
     private Animator anim;
-    //public GameObject fireball;
-    //public Transform firepoint;
+    public GameObject coal;
+    public Transform firepoint;
     //public Text MyText;
-    public ParticleSystem ps;
+    //public ParticleSystem ps;
     private int score;
     public int playerscore;
     public int highscore;
+    bool jumping;
+    
 
 
 
@@ -26,51 +28,68 @@ public class Player1 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        jumping = false;
         //gameObject.GetComponent<ParticleSystem>().emission.enabled = false;
         //MyText.text = "";
-        ps = GetComponent<ParticleSystem>();
-        ps.Pause();
+        
+        //ps.Pause();
 
     }
 
     // Update is called once per frame
     void Update()
-    {
-
-
+    { 
         DoJump();
         DoMove();
         DoAttack();
         //DoShoot();
-        DoRayCollisionCheck();
+        DoLand();
         //MyText.text = "" + playerscore;
-        DoSpecialEffectsAnim();
+        //DoSpecialEffectsAnim();
         //ParticleSystem.Stop();
         //DoSpecialEffects();
+        ShootingAnimation();
+    }
+
+
+    void FixedUpdate()
+    {
+        DoRayCollisionCheck();
     }
 
 
 
+    void DoLand()
+    {
 
+        print("jumping=" + jumping);
+
+        if( (jumping == true) && (isGrounded == true) && (rb.velocity.y<0))
+        {
+            jumping = false;
+            anim.SetBool("Jump", false);
+            print("landed");
+            
+        }
+
+    }
 
 
     void DoJump()
     {
+
+
         Vector2 velocity = rb.velocity;
 
         // check for jump
-        if (Input.GetKey("w") && isGrounded == true)
-        {
-            if (velocity.y < 0.01f)
-            {
-                velocity.y = 8f;    // give the player a velocity of 5 in the y axis
-                anim.SetBool("Jump", true);
-            }
+        if (  ((Input.GetKey("w")==true) || (Input.GetKey(KeyCode.Space)==true) || (Input.GetKey(KeyCode.UpArrow)==true)) && (isGrounded == true) )
+        { 
+            velocity.y = 8f;    // give the player a velocity of 5 in the y axis
+            anim.SetBool("Jump", true);
+            jumping = true; 
         }
-        if (isGrounded == false)
-        {
-            anim.SetBool("Jump", false);
-        }
+        
 
         rb.velocity = velocity;
 
@@ -88,9 +107,17 @@ public class Player1 : MonoBehaviour
         {
             velocity.x = -5;
         }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            velocity.x = -5;
+        }
 
         // check for moving right
         if (Input.GetKey("d"))
+        { 
+            velocity.x = 5;
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             velocity.x = 5;
         }
@@ -153,27 +180,39 @@ public class Player1 : MonoBehaviour
 
 
     }
-    /*
-    void DoShoot()
+
+    void ShootingAnimation()
     {
-        if (Input.GetButtonDown("Fire2"))
+        Vector2 velocity = rb.velocity;
+        if (Input.GetButton("Fire2"))
         {
+            velocity.x = 0;
+            anim.SetBool("Shooting", true);
 
-
-
-
-
-            if (Helper.GetDirection(gameObject) == true)
+            if (velocity.x != 0)
             {
-                MakeBullet(fireball, firepoint.position.x, firepoint.position.y, -6, 0);
+                anim.SetBool("Walking", false);
             }
-            else
-            {
-                MakeBullet(fireball, firepoint.position.x, firepoint.position.y, 6, 0);
-            }
-
         }
 
+        
+        rb.velocity = velocity;
+    }
+    void StopShootingAnimaton()
+    {
+        anim.SetBool("Shooting", false);
+    }
+
+    void DoShoot()
+    {
+        if (Helper.GetDirection(gameObject) == true)
+        {
+            MakeBullet(coal, firepoint.position.x, firepoint.position.y, -6, 0);
+        }
+        else
+        {
+            MakeBullet(coal, firepoint.position.x, firepoint.position.y, 6, 0);
+        }
     }
     void MakeBullet(GameObject prefab, float xpos, float ypos, float xvel, float yvel)
     {
@@ -185,17 +224,17 @@ public class Player1 : MonoBehaviour
 
 
     }
-    
+    /*
     void DoShoot()
     {
         if (Input.GetButtonDown("Fire2"))
         {
-            Instantiate(fireball, transform.position, transform.rotation);
+            Instantiate(coal, transform.position, transform.rotation);
         }
 
     }
+    
     */
-
 
 
     void DoRayCollisionCheck()
@@ -207,6 +246,7 @@ public class Player1 : MonoBehaviour
 
         Color hitColor = Color.white;
 
+        isGrounded = false;
 
         if (hit.collider != null)
         {
@@ -222,11 +262,6 @@ public class Player1 : MonoBehaviour
                 isGrounded = true;
                 hitColor = Color.green;
             }
-
-        }
-        else
-        {
-            isGrounded = false;
 
         }
         // draw a debug ray to show ray position
@@ -257,19 +292,8 @@ public class Player1 : MonoBehaviour
         rb.velocity = velocity;
     }
 
-    void DoSpecialEffectsAnim()
-    {
-
-        anim.SetBool("SpecEff", false);
-
-        if (Input.GetKey("f"))
-        {
-            anim.SetBool("SpecEff", true);
-        }
-
-    }
-
-
+ 
+/*
     void DoSpecialEffects()
     {
         ps.Play();
@@ -279,7 +303,7 @@ public class Player1 : MonoBehaviour
     {
         ps.Stop();
     }
-
+*/
     void DoDeath()
     {
         Destroy(this.gameObject);
