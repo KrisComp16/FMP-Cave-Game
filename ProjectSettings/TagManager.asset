@@ -9,6 +9,7 @@ TagManager:
   - Lava
   - Gem
   - Coal
+  - Win
   layers:
   - Default
   - TransparentFX
