@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2359024593776192290}
   - component: {fileID: 525633449700116888}
   - component: {fileID: 766726837437398748}
+  - component: {fileID: -1385413681257635851}
+  - component: {fileID: 3913477732608758228}
   m_Layer: 0
   m_Name: Orange Diamond Gem
   m_TagString: Untagged
@@ -222,3 +224,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed3a4f4324e9814abaf057742f7e177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!68 &-1385413681257635851
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2359024593776192301}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.036589168, y: -0.11719544}
+  - {x: 0.012140058, y: -0.116352335}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!50 &3913477732608758228
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2359024593776192301}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

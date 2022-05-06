@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectable : MonoBehaviour
+public class Coal : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,24 +17,19 @@ public class Collectable : MonoBehaviour
     }
 
 
+
     void OnTriggerEnter2D(Collider2D other)
     {
-
         print("tag=" + gameObject.tag);
 
-        if (other.gameObject.tag == "Player") 
+        if (other.gameObject.tag == "Enemy")
         {
-
             Destroy(this.gameObject);
-
         }
-        if (other.gameObject.tag == "Coal")
+        if (other.gameObject.tag == "Ground")
         {
-
             Destroy(this.gameObject);
-
         }
-
-
     }
+
 }

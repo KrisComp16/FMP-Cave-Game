@@ -19,9 +19,25 @@ public class Player1 : MonoBehaviour
     public int playerscore;
     public int highscore;
     bool jumping;
-    
 
 
+    // 0 = idle
+    // 1 = walk
+    // 2 = throw
+    // 3 = death 1
+    // 4 = death 2
+
+    enum State
+    {
+        Idle,
+        Walk,
+        Jumping,
+        Death,
+
+    }
+
+
+    State playerState;
 
     // Start is called before the first frame update
     void Start()
@@ -30,10 +46,15 @@ public class Player1 : MonoBehaviour
         anim = GetComponent<Animator>();
 
         jumping = false;
+
+        playerState = State.Idle;
+
         //gameObject.GetComponent<ParticleSystem>().emission.enabled = false;
         //MyText.text = "";
-        
+
         //ps.Pause();
+
+        print("player state = " + playerState);
 
     }
 
@@ -50,6 +71,7 @@ public class Player1 : MonoBehaviour
         //ParticleSystem.Stop();
         //DoSpecialEffects();
         ShootingAnimation();
+        Highscore();
     }
 
 
@@ -62,6 +84,10 @@ public class Player1 : MonoBehaviour
 
     void DoLand()
     {
+        if (playerState == State.Death)
+        {
+            return;
+        }
 
         print("jumping=" + jumping);
 
@@ -78,6 +104,10 @@ public class Player1 : MonoBehaviour
 
     void DoJump()
     {
+        if (playerState == State.Death)
+        {
+            return;
+        }
 
 
         Vector2 velocity = rb.velocity;
@@ -97,6 +127,11 @@ public class Player1 : MonoBehaviour
 
     void DoMove()
     {
+        if( playerState == State.Death )
+        {
+            return;
+        }
+
         Vector2 velocity = rb.velocity;
 
         // stop player sliding when not pressing left or right
@@ -276,16 +311,26 @@ public class Player1 : MonoBehaviour
 
         Vector2 velocity = rb.velocity;
 
-        if (other.gameObject.tag == "Gem")
+
+        if (playerState != State.Death)
         {
-            playerscore = playerscore + 100;
-            print(playerscore);
+            if (other.gameObject.tag == "Gem")
+            {
+                playerscore = playerscore + 100;
+                print(playerscore);
+            }
+
+
         }
+
         if (other.gameObject.tag == "Lava")
         {
             print("I've fallen into lava!");
             velocity.y = 8f;
+            velocity.x = 0f;
             anim.SetBool("LavaDeath", true);
+            anim.SetBool("Jump", false);
+            playerState = State.Death;
             
         }
 
@@ -312,13 +357,6 @@ public class Player1 : MonoBehaviour
         playerscore = 0;
     }
 
-    void OnGUI()
-    {
-        highscore = PlayerPrefs.GetInt("highscore", 0);
-
-        GUILayout.Label($"<color='white'><size=20>Score = {playerscore}\nHighscore = {highscore}</size></color>\n");
-    }
-
     void Highscore()
     {
 
@@ -336,6 +374,14 @@ public class Player1 : MonoBehaviour
 
     }
 
+    void OnGUI()
+    {
+        highscore = PlayerPrefs.GetInt("highscore", 0);
+
+        GUILayout.Label($"<color='white'><size=20>Score = {playerscore}\nHighscore = {highscore}</size></color>\n");
+    }
+
+   
     void Score()
     {
         if (Input.GetKey("="))
