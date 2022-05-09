@@ -19,7 +19,21 @@ public class Player1 : MonoBehaviour
     public int playerscore;
     public int highscore;
     bool jumping;
+    public Font Minecraft;
+    public static int Health;
+    public Animator Hearts;
+    Weapon playerWeapon;
+    public bool pickaxeActive;
+    public Animator Inventory; 
 
+
+
+    // player weapons
+    enum Weapon
+    {
+        Coal,
+        Pickaxe,
+    }
 
     // 0 = idle
     // 1 = walk
@@ -48,6 +62,7 @@ public class Player1 : MonoBehaviour
         jumping = false;
 
         playerState = State.Idle;
+        playerWeapon = Weapon.Coal;
 
         //gameObject.GetComponent<ParticleSystem>().emission.enabled = false;
         //MyText.text = "";
@@ -56,6 +71,9 @@ public class Player1 : MonoBehaviour
 
         print("player state = " + playerState);
 
+        Health = 5;
+
+        pickaxeActive = false;
     }
 
     // Update is called once per frame
@@ -63,7 +81,6 @@ public class Player1 : MonoBehaviour
     { 
         DoJump();
         DoMove();
-        DoAttack();
         //DoShoot();
         DoLand();
         //MyText.text = "" + playerscore;
@@ -72,12 +89,16 @@ public class Player1 : MonoBehaviour
         //DoSpecialEffects();
         ShootingAnimation();
         Highscore();
+        AttackChanger();
+
+        print(Health);
     }
 
 
     void FixedUpdate()
     {
         DoRayCollisionCheck();
+       
     }
 
 
@@ -201,20 +222,7 @@ public class Player1 : MonoBehaviour
 
 
 
-    void DoAttack()
-    {
 
-        if (Input.GetKey("v"))
-        {
-            anim.SetBool("Attack", true);
-        }
-        else
-        {
-            anim.SetBool("Attack", false);
-        }
-
-
-    }
 
     void ShootingAnimation()
     {
@@ -222,7 +230,39 @@ public class Player1 : MonoBehaviour
         if (Input.GetButton("Fire2"))
         {
             velocity.x = 0;
-            anim.SetBool("Shooting", true);
+
+            if( playerWeapon == Weapon.Coal )
+            {
+                anim.SetBool("Shooting", true);
+                anim.SetBool("Attack", false);
+            }
+            else if( playerWeapon == Weapon.Pickaxe )
+            {
+                anim.SetBool("Attack", true);
+                anim.SetBool("Shooting", false);
+            }
+            
+
+            if (velocity.x != 0)
+            {
+                anim.SetBool("Walking", false);
+            }
+        }
+        if (Input.GetButton("Fire1"))
+        {
+            velocity.x = 0;
+
+            if (playerWeapon == Weapon.Coal)
+            {
+                anim.SetBool("Shooting", true);
+                anim.SetBool("Attack", false);
+            }
+            else if (playerWeapon == Weapon.Pickaxe)
+            {
+                anim.SetBool("Attack", true);
+                anim.SetBool("Shooting", false);
+            }
+
 
             if (velocity.x != 0)
             {
@@ -230,12 +270,12 @@ public class Player1 : MonoBehaviour
             }
         }
 
-        
         rb.velocity = velocity;
     }
     void StopShootingAnimaton()
     {
         anim.SetBool("Shooting", false);
+        anim.SetBool("Attack", false);
     }
 
     void DoShoot()
@@ -319,6 +359,12 @@ public class Player1 : MonoBehaviour
                 playerscore = playerscore + 100;
                 print(playerscore);
             }
+            if (other.gameObject.tag == "Heart")
+            {
+                Health = Health + 1;
+                playerscore = playerscore + 100;
+                Hearts.SetInteger("Health", Health);
+            }
 
 
         }
@@ -334,21 +380,30 @@ public class Player1 : MonoBehaviour
             
         }
 
+        if (other.gameObject.tag == "Bone")
+        {
+            if (Health > 0)
+            {
+                Health -= 1;
+            }
+            else if (Health > 5)
+            {
+                Health = 5;
+            }
+            else
+            {
+                playerState = State.Death;
+                DoDeath();
+            }
+
+            Hearts.SetInteger("Health", Health);
+        }
+
         rb.velocity = velocity;
     }
 
- 
-/*
-    void DoSpecialEffects()
-    {
-        ps.Play();
-    }
 
-    void StopSpecialEffects()
-    {
-        ps.Stop();
-    }
-*/
+
     void DoDeath()
     {
         Destroy(this.gameObject);
@@ -378,6 +433,8 @@ public class Player1 : MonoBehaviour
     {
         highscore = PlayerPrefs.GetInt("highscore", 0);
 
+        GUI.skin.font = Minecraft;
+
         GUILayout.Label($"<color='white'><size=20>Score = {playerscore}\nHighscore = {highscore}</size></color>\n");
     }
 
@@ -398,5 +455,33 @@ public class Player1 : MonoBehaviour
     {
         PlayerPrefs.SetInt(name, Value);
     }
+
+
+    public void PickaxeInactive()
+    {
+        pickaxeActive= false;
+    }
+
+    public void PickaxeActive()
+    {
+        pickaxeActive = true;
+    }
+
+    void AttackChanger()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && (playerWeapon == Weapon.Coal))
+        {
+            playerWeapon = Weapon.Pickaxe;
+            Inventory.SetBool("Pickaxe", true);
+            Inventory.SetBool("Coal", false);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && (playerWeapon == Weapon.Pickaxe))
+        {
+            playerWeapon = Weapon.Coal;
+            Inventory.SetBool("Pickaxe", false);
+            Inventory.SetBool("Coal", true);
+        }
+    }
+
 }
 

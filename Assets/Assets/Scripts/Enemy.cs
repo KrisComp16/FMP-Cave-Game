@@ -181,7 +181,27 @@ public class Enemy : MonoBehaviour
             anim.SetBool("Death", true);
             anim.SetBool("Walking", false);
             anim.SetBool("Throwing", false);
+
+
         }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    { 
+        if( other.gameObject.tag == "Player")
+        {
+            Player1 script = other.gameObject.GetComponent<Player1>();
+            if( script.pickaxeActive )
+            {
+                print("I've been hit by a pickaxe!");
+                anim.SetBool("Death", true);
+                anim.SetBool("Walking", false);
+                anim.SetBool("Throwing", false);
+
+
+            }
+        }
+
     }
 
     void DoDeath()

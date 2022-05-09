@@ -11,6 +11,8 @@ TagManager:
   - Coal
   - Win
   - Enemy
+  - Bone
+  - Heart
   layers:
   - Default
   - TransparentFX
