@@ -24,7 +24,9 @@ public class Player1 : MonoBehaviour
     public Animator Hearts;
     Weapon playerWeapon;
     public bool pickaxeActive;
-    public Animator Inventory; 
+    public Animator Inventory;
+    public AudioManager am;
+
 
 
 
@@ -74,6 +76,8 @@ public class Player1 : MonoBehaviour
         Health = 5;
 
         pickaxeActive = false;
+
+        MusicChecker();
     }
 
     // Update is called once per frame
@@ -90,7 +94,7 @@ public class Player1 : MonoBehaviour
         ShootingAnimation();
         Highscore();
         AttackChanger();
-
+        
         print(Health);
     }
 
@@ -137,6 +141,7 @@ public class Player1 : MonoBehaviour
         if (  ((Input.GetKey("w")==true) || (Input.GetKey(KeyCode.Space)==true) || (Input.GetKey(KeyCode.UpArrow)==true)) && (isGrounded == true) )
         { 
             velocity.y = 8f;    // give the player a velocity of 5 in the y axis
+            am.Play("Jump");
             anim.SetBool("Jump", true);
             jumping = true; 
         }
@@ -358,12 +363,14 @@ public class Player1 : MonoBehaviour
             {
                 playerscore = playerscore + 100;
                 print(playerscore);
+                am.Play("Collectible");
             }
             if (other.gameObject.tag == "Heart")
             {
                 Health = Health + 1;
                 playerscore = playerscore + 100;
                 Hearts.SetInteger("Health", Health);
+                am.Play("Heart");
             }
 
 
@@ -374,6 +381,10 @@ public class Player1 : MonoBehaviour
             print("I've fallen into lava!");
             velocity.y = 8f;
             velocity.x = 0f;
+            am.Play("Death");
+            am.Play("Fire");
+            
+            am.Play("Level1");
             anim.SetBool("LavaDeath", true);
             anim.SetBool("Jump", false);
             playerState = State.Death;
@@ -480,6 +491,16 @@ public class Player1 : MonoBehaviour
             playerWeapon = Weapon.Coal;
             Inventory.SetBool("Pickaxe", false);
             Inventory.SetBool("Coal", true);
+        }
+    }
+
+    public void MusicChecker()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Level_1")
+        {
+            am.PlayMusic("Level1");
         }
     }
 

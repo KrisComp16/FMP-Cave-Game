@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public GameObject collectible;
     private Animator anim;
     public GameObject bones;
+    public AudioManager am;
 
 
     // Start is called before the first frame update
@@ -49,11 +50,11 @@ public class Enemy : MonoBehaviour
         float distance = ex - px;
 
 
-        if (ex > px)
+        if (ex > px && distance < 10)
         {
             Helper.DoFaceLeft(gameObject, true);
-            velocity.x = -2;
-            
+            velocity.x = 2;
+
         }
         
         else if (ex == px)
@@ -64,7 +65,7 @@ public class Enemy : MonoBehaviour
         }
         
         
-        else
+        else if (ex < px && distance < -10)
         {
             Helper.DoFaceLeft(gameObject, false);
             velocity.x = -2;
@@ -80,7 +81,7 @@ public class Enemy : MonoBehaviour
 
         if (anim.GetBool("Death") == false)
         {
-            if (distance < 5)
+            if (distance < 5) 
             {
                 velocity.x = 0;
                 anim.SetBool("Walking", false);
@@ -92,6 +93,7 @@ public class Enemy : MonoBehaviour
                 anim.SetBool("Walking", false);
                 anim.SetBool("Throwing", true);
             }
+
         }
         else
         {
@@ -181,7 +183,7 @@ public class Enemy : MonoBehaviour
             anim.SetBool("Death", true);
             anim.SetBool("Walking", false);
             anim.SetBool("Throwing", false);
-
+            am.Play("SkeletonDeath");
 
         }
     }
@@ -197,6 +199,7 @@ public class Enemy : MonoBehaviour
                 anim.SetBool("Death", true);
                 anim.SetBool("Walking", false);
                 anim.SetBool("Throwing", false);
+                am.Play("SkeletonDeath");
 
 
             }
@@ -216,5 +219,29 @@ public class Enemy : MonoBehaviour
         GameObject instance = Instantiate(prefab, new Vector3(xpos, ypos, 0), Quaternion.identity);
     }
 
+
+    public void SkeletonWalkSound()
+    {
+        int num = 0;
+
+        num = Random.Range(1, 5);
+
+        if (num == 1)
+        {
+            am.Play("SkeletonWalk1");
+        }
+        if (num == 2)
+        {
+            am.Play("SkeletonWalk2");
+        }
+        if (num == 3)
+        {
+            am.Play("SkeletonWalk3");
+        }
+        if (num == 4)
+        {
+            am.Play("SkeletonWalk4");
+        }
+    }
 
 }
