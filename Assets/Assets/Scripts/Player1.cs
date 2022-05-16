@@ -26,6 +26,9 @@ public class Player1 : MonoBehaviour
     public bool pickaxeActive;
     public Animator Inventory;
     public AudioManager am;
+    public Animator Death;
+    public bool isPlaying1 = true;
+    public bool isPlaying2 = false;
 
 
 
@@ -54,7 +57,7 @@ public class Player1 : MonoBehaviour
 
 
     State playerState;
-
+    public static Player1 instance;
     // Start is called before the first frame update
     void Start()
     {
@@ -77,7 +80,21 @@ public class Player1 : MonoBehaviour
 
         pickaxeActive = false;
 
-        MusicChecker();
+        //MusicChecker();
+
+
+        //makes it a singleton
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+
     }
 
     // Update is called once per frame
@@ -94,8 +111,10 @@ public class Player1 : MonoBehaviour
         ShootingAnimation();
         Highscore();
         AttackChanger();
-        
-        print(Health);
+
+        //print(Health);
+
+        MusicChecker();
     }
 
 
@@ -114,13 +133,13 @@ public class Player1 : MonoBehaviour
             return;
         }
 
-        print("jumping=" + jumping);
+        //print("jumping=" + jumping);
 
         if( (jumping == true) && (isGrounded == true) && (rb.velocity.y<0))
         {
             jumping = false;
             anim.SetBool("Jump", false);
-            print("landed");
+            //print("landed");
             
         }
 
@@ -362,7 +381,7 @@ public class Player1 : MonoBehaviour
             if (other.gameObject.tag == "Gem")
             {
                 playerscore = playerscore + 100;
-                print(playerscore);
+                //print(playerscore);
                 am.Play("Collectible");
             }
             if (other.gameObject.tag == "Heart")
@@ -378,16 +397,23 @@ public class Player1 : MonoBehaviour
 
         if (other.gameObject.tag == "Lava")
         {
-            print("I've fallen into lava!");
-            velocity.y = 8f;
+            //print("I've fallen into lava!");
+            velocity.y = 10f;
             velocity.x = 0f;
             am.Play("Death");
+            am.Play("Death2");
             am.Play("Fire");
-            
+            am.Pause("SkeletonWalk1");
+            am.Pause("SkeletonWalk2");
+            am.Pause("SkeletonWalk3");
+            am.Pause("SkeletonWalk4");
+            Death.SetTrigger("DEath");
+            am.PauseMusic("Level1");
             am.Play("Level1");
             anim.SetBool("LavaDeath", true);
             anim.SetBool("Jump", false);
             playerState = State.Death;
+
             
         }
 
@@ -404,7 +430,18 @@ public class Player1 : MonoBehaviour
             else
             {
                 playerState = State.Death;
-                DoDeath();
+                am.Play("Death");
+                am.Play("Death2");
+                am.Play("Fire");
+                am.Pause("SkeletonWalk1");
+                am.Pause("SkeletonWalk2");
+                am.Pause("SkeletonWalk3");
+                am.Pause("SkeletonWalk4");
+                Death.SetTrigger("DEath");
+                am.PauseMusic("Level1");
+                am.Play("Level1");
+                anim.SetBool("Death", true);
+                //DoDeath();
             }
 
             Hearts.SetInteger("Health", Health);
@@ -417,9 +454,9 @@ public class Player1 : MonoBehaviour
 
     void DoDeath()
     {
-        Destroy(this.gameObject);
-        Destroy(gameObject);
-        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene("Death");
+        //(this.gameObject);
+        //Destroy(gameObject);
         playerscore = 0;
     }
 
@@ -498,9 +535,47 @@ public class Player1 : MonoBehaviour
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Level_1")
+ 
+
+        print("scene = " + scene.name);
+
+        if (scene.name == "Level_1" && isPlaying1 == true)
         {
             am.PlayMusic("Level1");
+            isPlaying1 = false;
+            isPlaying2 = true;
+        }
+        if (scene.name == "Level_2" && isPlaying2 == true)
+        {
+            print("Level 2!");
+            am.PauseMusic("Level1");
+            am.PlayMusic("Level2");
+            isPlaying2 = false;
+        }
+    }
+
+
+    public void WalkSound()
+    {
+        int num = 0;
+
+        num = Random.Range(1, 5);
+
+        if (num == 1)
+        {
+            am.Play("Footstep1");
+        }
+        if (num == 2)
+        {
+            am.Play("Footstep2");
+        }
+        if (num == 3)
+        {
+            am.Play("Footstep3");
+        }
+        if (num == 4)
+        {
+            am.Play("Footstep4");
         }
     }
 

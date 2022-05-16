@@ -13,11 +13,11 @@ public class AudioManager : MonoBehaviour
     public AudioMixerGroup musicMixer;
     public AudioMixerGroup soundMixer;
 
-    //public static AudioManager instance;
+    public static AudioManager instance;
     // Start is called before the first frame update
     void Start()
     {
-        /*
+        
         //makes it a singleton
         if (instance == null)
         {
@@ -29,7 +29,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
-        */
+        
 
 
 
@@ -85,6 +85,30 @@ public class AudioManager : MonoBehaviour
             return;
         }
         m.source.Play();
+    }
+
+    public void PauseMusic(string name)
+    {
+        Sound m = Array.Find(music, sound => sound.name == name);
+        //custom error message when cant find clip name
+        if (m == null)
+        {
+            Debug.LogWarning("Music: " + name + " not found!");
+            return;
+        }
+        m.source.Pause();
+    }
+
+    public void Pause(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        //custom error message when cant find clip name
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Pause();
     }
 
     //to play do
