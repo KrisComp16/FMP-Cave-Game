@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    public AudioManager am;
+    public bool isPlaying1 = true;
+    public bool isPlaying2 = false;
 
     public static SceneChanger instance = null;
 
@@ -18,6 +21,7 @@ public class SceneChanger : MonoBehaviour
     void Update()
     {
         ButtonPress();
+        MusicChecker();
     }
 
     void Awake()
@@ -59,5 +63,28 @@ public class SceneChanger : MonoBehaviour
         }
     }
 
+
+    public void MusicChecker()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+
+
+
+        print("scene = " + scene.name);
+
+        if (scene.name == "Level_1" && isPlaying1 == true)
+        {
+            am.PlayMusic("Level1");
+            isPlaying1 = false;
+            isPlaying2 = true;
+        }
+        if (scene.name == "Level_2" && isPlaying2 == true)
+        {
+            print("Level 2!");
+            am.PauseMusic("Level1");
+            am.PlayMusic("Level2");
+            isPlaying2 = false;
+        }
+    }
 
 }

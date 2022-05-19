@@ -29,6 +29,7 @@ public class Player1 : MonoBehaviour
     public Animator Death;
     public bool isPlaying1 = true;
     public bool isPlaying2 = false;
+    public PointsManager pm;
 
 
 
@@ -84,6 +85,7 @@ public class Player1 : MonoBehaviour
 
 
         //makes it a singleton
+        /*
         if (instance == null)
         {
             instance = this;
@@ -94,7 +96,7 @@ public class Player1 : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
-
+        */
     }
 
     // Update is called once per frame
@@ -109,12 +111,12 @@ public class Player1 : MonoBehaviour
         //ParticleSystem.Stop();
         //DoSpecialEffects();
         ShootingAnimation();
-        Highscore();
+        //Highscore();
         AttackChanger();
 
         //print(Health);
 
-        MusicChecker();
+        //MusicChecker();
     }
 
 
@@ -380,14 +382,14 @@ public class Player1 : MonoBehaviour
         {
             if (other.gameObject.tag == "Gem")
             {
-                playerscore = playerscore + 100;
+                pm.playerscore = pm.playerscore + 100;
                 //print(playerscore);
                 am.Play("Collectible");
             }
             if (other.gameObject.tag == "Heart")
             {
                 Health = Health + 1;
-                playerscore = playerscore + 100;
+                pm.playerscore = pm.playerscore + 100;
                 Hearts.SetInteger("Health", Health);
                 am.Play("Heart");
             }
@@ -457,9 +459,10 @@ public class Player1 : MonoBehaviour
         SceneManager.LoadScene("Death");
         //(this.gameObject);
         //Destroy(gameObject);
-        playerscore = 0;
+        pm.playerscore = 0;
     }
-
+    
+    /*
     void Highscore()
     {
 
@@ -486,24 +489,12 @@ public class Player1 : MonoBehaviour
         GUILayout.Label($"<color='white'><size=20>Score = {playerscore}\nHighscore = {highscore}</size></color>\n");
     }
 
-   
-    void Score()
-    {
-        if (Input.GetKey("="))
-        {
-            playerscore += 1;
-        }
-        if (Input.GetKey("-"))
-        {
-            playerscore -= 1;
-        }
-    }
 
     void SetHighscore(string name, int Value)
     {
         PlayerPrefs.SetInt(name, Value);
     }
-
+    */
 
     public void PickaxeInactive()
     {
@@ -531,6 +522,7 @@ public class Player1 : MonoBehaviour
         }
     }
 
+    /*
     public void MusicChecker()
     {
         Scene scene = SceneManager.GetActiveScene();
@@ -553,7 +545,7 @@ public class Player1 : MonoBehaviour
             isPlaying2 = false;
         }
     }
-
+    */
 
     public void WalkSound()
     {
