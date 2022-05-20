@@ -8,8 +8,9 @@ public class SceneChanger : MonoBehaviour
     public AudioManager am;
     public bool isPlaying1 = true;
     public bool isPlaying2 = false;
+    public bool isPlaying3 = false;
 
-    public static SceneChanger instance = null;
+    //public static SceneChanger instance = null;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class SceneChanger : MonoBehaviour
         MusicChecker();
     }
 
+    /*
     void Awake()
     {
         if (instance == null)
@@ -38,6 +40,8 @@ public class SceneChanger : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+    */
+
 
     void ButtonPress()
     {
@@ -84,6 +88,14 @@ public class SceneChanger : MonoBehaviour
             am.PauseMusic("Level1");
             am.PlayMusic("Level2");
             isPlaying2 = false;
+            isPlaying3 = true;
+        }
+        if (scene.name == "Level_3" && isPlaying3 == true)
+        {
+            am.PauseMusic("Level1");
+            am.PauseMusic("Level2");
+            am.PlayMusic("Level3");
+            isPlaying3 = false;
         }
     }
 

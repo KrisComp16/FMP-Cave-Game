@@ -14,7 +14,7 @@ public class WinLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        TestChanger();
     }
 
 
@@ -28,16 +28,14 @@ public class WinLevel : MonoBehaviour
 
     void ChangeScene()
     {
+        SceneManager.LoadScene("MainMenu");
+    }
 
-        Scene scene = SceneManager.GetActiveScene();
-
-        if (scene.name == "Level_1")
+    void TestChanger()
+    {
+        if (Input.GetKeyDown("z"))
         {
-            SceneManager.LoadScene("Level_2");
-        }
-        if (scene.name == "Level_2")
-        {
-            SceneManager.LoadScene("Level_1");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

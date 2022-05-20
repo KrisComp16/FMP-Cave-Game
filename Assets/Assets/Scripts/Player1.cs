@@ -97,6 +97,8 @@ public class Player1 : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
         */
+
+        playerscore = PlayerPrefs.GetInt("playerscore");
     }
 
     // Update is called once per frame
@@ -117,6 +119,8 @@ public class Player1 : MonoBehaviour
         //print(Health);
 
         //MusicChecker();
+
+        SetScore();
     }
 
 
@@ -569,6 +573,13 @@ public class Player1 : MonoBehaviour
         {
             am.Play("Footstep4");
         }
+    }
+
+    void SetScore()
+    {
+        //
+        PlayerPrefs.SetInt("playerscore",  pm.playerscore);
+
     }
 
 }

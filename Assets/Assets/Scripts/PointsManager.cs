@@ -13,7 +13,7 @@ public class PointsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerscore = 0;
+        playerscore = PlayerPrefs.GetInt("playerscore");
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class PointsManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     void Highscore()
@@ -46,7 +46,7 @@ public class PointsManager : MonoBehaviour
         {
             highscore = playerscore;
 
-            SetHighscore("highscore", highscore);
+            SetScore("highscore", highscore);
         }
         else
         {
@@ -64,7 +64,8 @@ public class PointsManager : MonoBehaviour
         GUILayout.Label($"<color='white'><size=20>Score = {playerscore}\nHighscore = {highscore}</size></color>\n");
     }
 
-    void SetHighscore(string name, int Value)
+
+    void SetScore(string name, int Value)
     {
         PlayerPrefs.SetInt(name, Value);
     }
